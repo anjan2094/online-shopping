@@ -1,0 +1,264 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family:"Helvetica reue", sans-serif
+}
+.header{
+    display: flex;
+    height: 64px;
+    padding: 0 16px;
+}
+.toggle{
+    display: block;
+    position: relative;
+    flex: 1;
+    float: left;
+    margin-top: 15px;
+}
+.cart{
+    display: block;
+    margin-top: 15px;
+    flex: 1;
+    float: right;
+    position: relative;
+}
+.cart img{
+    width: 20px;
+    height: 20px;
+   margin-left: 90%;
+}
+.home{
+    display: block;
+    position: relative;
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: .3em;
+}
+.home a{
+    text-decoration: none;
+    color: #181818
+}
+.all-menu{
+    display: block;
+    height: 70px;
+    line-height: 70px;
+}
+.menu {
+    text-align: center;
+    margin: 0 30px 0 0;
+    display: none;
+}
+.menu a{
+    text-decoration: none;
+    color:#181818;
+    margin: 0 10px;
+    line-height: 70px;
+    font-size: .35cm;
+}
+label{
+    margin: 0  0 0 40px;
+    display: none;
+}
+#toggle{
+    display: none;
+}
+footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 24px;
+}
+footer a{
+    text-decoration: none;
+    display:inline-block;
+    position: relative;
+    font-size: 13px;
+    color: #737373
+}
+.footer{
+    box-sizing: border-box;
+    padding: 6px;
+    width: 120px;
+    margin: 8px auto 0;
+    color: white;
+    background-color: black;
+    display:inline-block;
+    position: relative;
+}
+.cart-item{
+    display: grid;
+    grid-template-rows: 32% 60% 20%;
+    font-size: .8em;
+    margin: 0 auto;
+    padding: 0 24px 48px 24px;
+    max-width: 900px;
+    overflow: hidden;
+}
+.cart-description{
+    text-align: center;
+}
+.all-item{
+    display: flex;
+    margin: 40px 0;
+}
+.all-item img{
+    width: 80px;
+    height:80px;
+    margin-top:20px; 
+}
+.details{
+    flex: 4;
+    display: -webkit-inline-box;
+   position: relative;
+   margin-top: 26px;
+   margin-right: 30px;
+   margin-left: 10px;
+   height: 20px; 
+}
+.title{
+    flex:1;
+    float: left;
+    position: relative;
+    margin-top: 26px;
+    margin-right: 30px;
+    width: calc(100% - 328px);
+    line-height: 20px;
+    font-weight: 500;
+    
+}
+.quantity-size{
+    flex: 1;
+    display: flex;
+    margin-top: 26px;
+    text-align: right;
+    justify-content: space-around;  
+}
+.quantity, .size, .price{
+    display: inline-block;
+    white-space: nowrap;
+}
+.quantity{
+    width: 160px;
+    min-width: 80px;
+}
+.option{
+    border: none;
+    outline: none;
+    background: white;
+    font-size: 1.2em;
+}
+.price{
+    min-width: 70px;
+    width: 100px;
+}
+.size{
+    
+   min-width: 70px;
+   width: 144px;
+}
+.size span{
+    margin-left: 10px;
+}
+.checkout-button{
+    display: inline-block;
+}
+.total-price{
+    position: relative;
+   text-align: right;
+   font-weight: bold;
+   margin-right: 10px;
+   align-self: self-end;
+}
+.total-price button{
+    width: 170px;
+    height: 35px;
+    border: 2px solid black;
+    background: white;
+}
+.total-price span{
+    margin: 0 20px;
+    font-weight: 600; 
+}
+@media only screen and (max-width: 600px)
+{
+    .toggle label{
+        display: block;
+        cursor: pointer;
+    }
+    .all-menu{
+        height: 0;
+    }
+    .menu{
+        text-align: center;
+       width: 100%;
+    }
+    .menu a{
+        display: none;
+        border-bottom: 1px solid #eaeaeb;
+        margin: 0;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    .header{
+       margin-bottom: 10px;
+    }
+    .details{
+        flex: 4;
+        display: block;
+       position: relative;
+       margin: 10px 10px 0 0;
+    }
+    .title{
+        margin-top: 36px;
+        margin-right: 0;
+        margin-left: 20px;
+        width: calc(100% - 245px);
+        min-width: 170px;
+    }
+    footer{
+        display: none;
+    }
+    .quantity-size{
+        margin:80px 10px 0 0;
+       
+    }
+    .quantity, .size, .price{
+        text-align: right;
+        width: auto;
+    }
+    .quantity{
+        width: 0;
+        min-width: 60px;
+        margin-bottom: 20px;
+    }
+    .price{
+        min-width: 50px;
+        width: 0;
+    }
+    .size{
+        
+       min-width: 50px;
+       width: 0;
+    }
+    .checkout-button button{
+        width: 100%;
+        background: #180733;
+        outline: none;
+        border: none;
+        color: white;
+        height: 64px;
+        bottom: 0;
+        position: fixed;
+        left: 0;
+        right: 0;
+    }
+    .checkout-button{
+        width: 100%;
+    }
+}

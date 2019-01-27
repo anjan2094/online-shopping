@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Checkout - SHOP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="checkout.css" />
+</head>
+
+<body>
+    <header>
+        <div class="all-header">
+            <div class="header">
+                <div class="toggle">
+                    <label for="toggle">&#9776;</label>
+                    <input type="checkbox" id="toggle" />
+                </div>
+                <div class="home">
+                    <a href="index.html">
+                        <h3>SHOP</h3>
+                    </a>
+                </div>
+                <div class="cart">
+                    <a href="cart.html">
+                        <img src="./image/60992.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="all-menu">
+                <div class="menu">
+                    <a href="mens-outerwear.html">Men's Outwear</a>
+                    <a href="#ladies-outerwear">Ladies Outwear</a>
+                    <a href="#mens-tshirt">Men's T-Shirt</a>
+                    <a href="#ladies-tshirt">Ladies T-Shirt</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="heading">
+            <h1>Checkout</h1>
+            <span>Shop is a demo app - form data will not be sent</span>
+        </div>
+    </section>
+    <section class="checkout-details">
+        <section class="account-shipping-details">
+            <form>
+                <div class="account-information">
+                    <h3>Account Information</h3>
+                    <div class="container">
+                        <input type="text" name="email" placeholder>
+                        <label class="input-field">Email</label>
+                        <span class="enter"></span>
+                    </div>
+                    <div class="container">
+                        <input type="text" name="phnumber" placeholder>
+                        <label class="input-field">Phone Number</label>
+                        <span class="enter"></span>
+                    </div>
+                </div>
+                <div class="shipping-address">
+                    <h3>Shipping-Address</h3>
+                    <div class="container">
+                        <input type="text" name="address" placeholder>
+                        <label class="input-field">Address</label>
+                        <span class="enter"></span>
+                    </div>
+                    <div class="container">
+                        <input type="text" name="city" placeholder>
+                        <label class="input-field">City</label>
+                        <span class="enter"></span>
+                    </div>
+                    <div class="state-zip">
+                        <div class="container">
+                            <input type="text" name="state" placeholder>
+                            <label class="input-field">State/Province</label>
+                            <span class="enter"></span>
+                        </div>
+                        <div id="zip" class="container">
+                            <input type="text" name="zip" placeholder>
+                            <label class="input-field">Zip/Postal Code</label>
+                            <span class="enter"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="country">Country</label>
+                        <select class='country'>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>Canada</option>
+                            <option>UK</option>
+                        </select>
+                        <hr>
+                    </div>
+                    <div>
+                        <h3>Billing Address</h3>
+                    </div>
+                    <div class="billing-checkbox">
+                        <input type="checkbox" name="ckeckbox">
+                        <Span>Use different billing address</Span>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section class="payment-details">
+            <form>
+                <div>
+                    <h3>Payment Method</h3>
+                    <div class="container">
+                        <input type="text" name="name" placeholder>
+                        <label class="input-field">Cardholder</label>
+                        <span class="enter"></span>
+                    </div>
+                    <div class="container">
+                        <input type="text" name="card-number" placeholder>
+                        <label class="input-field">Card Number</label>
+                        <span class="enter"></span>
+                    </div>
+                    <div class="expiry-name">
+                        <label for="expiry">Expiry</label>
+                    </div>
+                    <div class="expiry-date">
+                        <div class="expiry-month">
+                            <select>
+                                <option>Jan</option>
+                                <option>Feb</option>
+                                <option>Mar</option>
+                                <option>Apr</option>
+                                <option>May</option>
+                                <option>Jun</option>
+                                <option>Jul</option>
+                                <option>Aug</option>
+                                <option>Sep</option>
+                                <option>Oct</option>
+                                <option>Nov</option>
+                                <option>Dec</option>
+                            </select>
+                            <hr>
+                        </div>
+                        <div class="expiry-year">
+                            <select>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                                <option>2026</option>
+                            </select>
+                            <hr>
+                        </div>
+                        <div class="container">
+                            <input type="text" name="cvv" placeholder>
+                            <label class="input-field">CVV</label>
+                            <span class="enter"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div class="title-price">
+                        <div class="product-title"><span>Anvil L/S Crew Neck - Grey</span></div>
+                        <div class="product-price"><span>$22.15</span></div>
+                    </div>
+                    <div class="title-price">
+                        <div class="total"><span>Total</span></div>
+                        <div class="price"><span>$22.15</span></div>
+                    </div>
+                </div>
+                <div class="order-button">
+                    <button>PLACE ORDER</button>
+                </div>
+            </form>
+        </section>
+    </section>
+    <footer>
+        <div>
+            <a href="#">Made by Polymer</a>
+        </div>
+        <div class="footer">DEMO ONLY</div>
+    </footer>
+</body>
+
+</html>
